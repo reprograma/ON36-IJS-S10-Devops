@@ -3,7 +3,7 @@
 ## Nome do Exercicio
 
 - Explicação do exercício: 
-[CONTEUDO]
+O exercício será uma implementação guiada pela professora onde vamos subir a aplicação e o banco de dados para o EC2 usando Docker e integrar com GitHub Actions com criação de Pipelines.
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

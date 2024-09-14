@@ -169,9 +169,6 @@ on:
   pull_request_target:
     branches:
       - main
-  push:
-    tags:
-      - 'v*' # Aciona o fluxo de trabalho apenas quando uma tag que começa com 'v' é criada
 
 jobs:
   build-and-test:
@@ -246,6 +243,29 @@ jobs:
 
 Este arquivo YAML inclui diferentes cenários baseados em eventos de pull request e push. Ele constrói e testa o código em qualquer push ou pull request, implanta no ambiente de desenvolvimento quando uma PR é mesclada na branch main, no ambiente de homologação quando uma PR é aberta para a branch de homologação e no ambiente de produção quando uma tag é criada com um formato específico (v*), indicando uma versão. Essa abordagem oferece um fluxo de trabalho controlado e automatizado para os diferentes ambientes de implantação.
 
+### Criando fluxos de trabalhos com GitActions
+
+Para criar fluxos de trabalho com GitHub Actions, você pode seguir estes passos:
+
+1. **Configuração do Repositório**:
+   - Acesse o seu repositório no GitHub.
+   - Crie um novo arquivo chamado `.github/workflows/nome_do_workflow.yml`.
+   - Esse arquivo YAML conterá a definição do seu fluxo de trabalho.
+
+2. **Definição do Fluxo de Trabalho**:
+   - No arquivo YAML, defina o nome do seu fluxo de trabalho e os gatilhos que o acionarão, como push de código, criação de pull requests ou outras atividades específicas.
+
+3. **Configuração das Etapas (Steps)**:
+   - Dentro do fluxo de trabalho, defina as etapas que serão executadas.
+   - Cada etapa pode consistir em uma ou mais ações (actions), que são unidades de trabalho que realizam tarefas específicas, como executar comandos, testar código, implantar aplicativos, etc.
+
+4. **Utilização de Ações Personalizadas**:
+   - Além das ações pré-definidas fornecidas pelo GitHub, você também pode usar ações personalizadas ou criar suas próprias ações para atender às necessidades específicas do seu projeto.
+
+5. **Execução e Monitoramento do Fluxo de Trabalho**:
+   - Depois de definir o fluxo de trabalho, ele será executado automaticamente sempre que os gatilhos especificados forem acionados.
+   - Você pode monitorar o progresso e o resultado do fluxo de trabalho na guia "Actions" do seu repositório no GitHub.
+
 ## Inteligência Artificial
 
 A inteligência artificial (IA) é um campo da ciência da computação que se concentra no desenvolvimento de sistemas e máquinas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Essas tarefas incluem raciocínio, aprendizado, percepção, compreensão da linguagem natural, reconhecimento de padrões, tomada de decisões e muito mais.
@@ -298,42 +318,22 @@ Integrar IA com GitHub Actions pode ser feito através do desenvolvimento de scr
 
 ## Docker
 
-## AWS EC2 e S3
+[Docker](https://www.docker.com/) é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. ([Wiki](https://pt.wikipedia.org/wiki/Docker_(software)))
+
+O Objetivo é acelear a maneira como desenvolvemos, executamos e entregamos aplicativos para o mundo, removendo a necessidade de configurações e gerenciamentos manuais de ambientes. 
+
+## AWS EC2
+
+EC2 ou Elastic Compute Cloud é o serviço de computação em nuve da Amazon e uma das partes centrais plataforma [AWS](https://aws.amazon.com/), é um serviço que possui um nível gratuito e oferece segurança , agilidade. Com ele podemos obter computadores virtuais onde podemos rodar nossas aplicações e banco de dados.
 
 # Prática
-
-## Criando fluxos de trabalhos com GitActions
-
-Para criar fluxos de trabalho com GitHub Actions, você pode seguir estes passos:
-
-1. **Configuração do Repositório**:
-   - Acesse o seu repositório no GitHub.
-   - Crie um novo arquivo chamado `.github/workflows/nome_do_workflow.yml`.
-   - Esse arquivo YAML conterá a definição do seu fluxo de trabalho.
-
-2. **Definição do Fluxo de Trabalho**:
-   - No arquivo YAML, defina o nome do seu fluxo de trabalho e os gatilhos que o acionarão, como push de código, criação de pull requests ou outras atividades específicas.
-
-3. **Configuração das Etapas (Steps)**:
-   - Dentro do fluxo de trabalho, defina as etapas que serão executadas.
-   - Cada etapa pode consistir em uma ou mais ações (actions), que são unidades de trabalho que realizam tarefas específicas, como executar comandos, testar código, implantar aplicativos, etc.
-
-4. **Utilização de Ações Personalizadas**:
-   - Além das ações pré-definidas fornecidas pelo GitHub, você também pode usar ações personalizadas ou criar suas próprias ações para atender às necessidades específicas do seu projeto.
-
-5. **Execução e Monitoramento do Fluxo de Trabalho**:
-   - Depois de definir o fluxo de trabalho, ele será executado automaticamente sempre que os gatilhos especificados forem acionados.
-   - Você pode monitorar o progresso e o resultado do fluxo de trabalho na guia "Actions" do seu repositório no GitHub.
+- [Implementação guiada](/exercicios/para-sala/)
 
 # Desafio da Semana 
-- [Exercicio para sala](/exercicios/para-sala/)
-- [Exercicio para casa](/exercicios/para-casa/)
+- [Desafio da semana](/exercicios/para-casa/)
 
 # Material da aula 
 - [Material](/material)
-
-# Links Úteis
-- 
 
 <p align="center">
 Desenvolvido com :purple_heart:  
