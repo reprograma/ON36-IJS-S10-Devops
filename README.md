@@ -333,6 +333,7 @@ EC2 ou Elastic Compute Cloud é o serviço de computação em nuve da Amazon e u
 - [Desafio da semana](/exercicios/para-casa/)
 
 # Material da aula 
+
 - [Material](/material)
 
 <p align="center">
